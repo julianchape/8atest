@@ -157,6 +157,7 @@ body{
 
     @media screen and (max-width: 1005px) {
         body{
+            padding:16px;
             header{
                 nav{
                     padding:0;
@@ -171,41 +172,43 @@ body{
                         }
                     }
                     ul{
-                        justify-content:space-evenly;
                         li{
                             font-size:12px;
                         }
                     }
                     #prueba{
-                        display:none;
-                    }
-                }
-            }
-            #hero{
-                width:100%;
-                #herotext{
-                    h1{
-                        font-size:20px;
-                        margin-bottom:10px;
-                    }
-                    h2{
-                        font-size:12px;
-                    }
-                }
-                #registro{
-                    height:54px;
-                    h3{
-                        font-size:16px;
-                    }
-                    #registrar{
-                        width:107px;
-                        height: 25px;
+                        width:75px;
+                        height:30px;
                         font-size:12px;
                     }
                 }
             }
+ 
             main{
                 margin-top:30px;
+                #hero{
+                    width:100%;
+                    #herotext{
+                        h1{
+                            font-size:20px;
+                            margin-bottom:10px;
+                        }
+                        h2{
+                            font-size:12px;
+                        }
+                    }
+                    #registro{
+                        height:54px;
+                        h3{
+                            font-size:16px;
+                        }
+                        #registrar{
+                            width:107px;
+                            height: 25px;
+                            font-size:12px;
+                        }
+                    }
+                }
                 section{
                     article{
                         display: flex;
@@ -215,15 +218,15 @@ body{
                         img{
                             margin-right: 0;
                             margin-bottom: 20px;
-                            width:100%;
+                            width:70%;
                         }
                         .artext{
                             h3{
-                                font-size:16px;
+                                font-size:20px;
                                 margin-bottom:15px;
                             }
                             p{
-                                font-size:12px;
+                                font-size:16px;
                             }
                         }
                         #simg{

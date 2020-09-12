@@ -232,6 +232,9 @@ body main section #simg {
 }
 
 @media screen and (max-width: 1005px) {
+  body {
+    padding: 16px;
+  }
   body header nav {
     padding: 0;
     margin-bottom: 5px;
@@ -245,40 +248,37 @@ body main section #simg {
   body header nav #logo span {
     font-size: 16px;
   }
-  body header nav ul {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
   body header nav ul li {
     font-size: 12px;
   }
   body header nav #prueba {
-    display: none;
-  }
-  body #hero {
-    width: 100%;
-  }
-  body #hero #herotext h1 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  body #hero #herotext h2 {
-    font-size: 12px;
-  }
-  body #hero #registro {
-    height: 54px;
-  }
-  body #hero #registro h3 {
-    font-size: 16px;
-  }
-  body #hero #registro #registrar {
-    width: 107px;
-    height: 25px;
+    width: 75px;
+    height: 30px;
     font-size: 12px;
   }
   body main {
     margin-top: 30px;
+  }
+  body main #hero {
+    width: 100%;
+  }
+  body main #hero #herotext h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  body main #hero #herotext h2 {
+    font-size: 12px;
+  }
+  body main #hero #registro {
+    height: 54px;
+  }
+  body main #hero #registro h3 {
+    font-size: 16px;
+  }
+  body main #hero #registro #registrar {
+    width: 107px;
+    height: 25px;
+    font-size: 12px;
   }
   body main section article {
     display: -webkit-box;
@@ -296,14 +296,14 @@ body main section #simg {
   body main section article img {
     margin-right: 0;
     margin-bottom: 20px;
-    width: 100%;
+    width: 70%;
   }
   body main section article .artext h3 {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 15px;
   }
   body main section article .artext p {
-    font-size: 12px;
+    font-size: 16px;
   }
   body main section article #simg {
     -webkit-box-ordinal-group: unset;
