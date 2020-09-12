@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin:0;
+    border:0;
+    padding:0;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+    flex-flow:column nowrap;
+    header{
+        nav{
+            padding:16px 16px 16px 16px;
+        margin:0 auto;
+        max-width: 1115px;
+        display:flex;
+        flex-flow:row wrap;
+        justify-content: space-between;
+        height: 108px;
+        align-items: center;
+        width:100%;
+        background-color:white;
+        #logo{
+            background-color:#03353b;
+            width:115px;
+            height:49px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                color:white;
+                font-size:30px;
+            }
+        }
+            ul{
+                display:flex;
+                position:relative;
+                overflow:visible;
+                flex-flow:row wrap;
+                justify-content: space-between;
+                align-items: center;
+                list-style:none;
+                li{
+                    font-size:15px;
+                    color:#03363c;
+                    font-weight: bold;
+                    padding:16px;
+                }
+            }
+            #prueba{
+                width:214px;
+                height:50px;
+                background-color:#3aaabb;
+                font-size: 21px;
+                color: #ffffff;
+                font-weight: bold;
+            }
+        }
+    }
+
+        #hero{
+            position:relative;
+            display:inline-block;
+            text-align:center;
+            img{
+                width:100%;
+            }
+            #herotext{
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                h1{
+                    font-size:63px;
+                    color:white;
+                    font-weight: normal;
+                    max-width:525px;
+                }
+                h2{
+                    font-size:23px;
+                    color:white;
+                    font-weight: normal;
+                    text-align: center;
+                }
+            }
+            #registro{
+                display:flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                align-content: center;
+                width:100%;
+                height:108px;
+                filter:drop-shadow(0px 4px 2px rgba(0,0,1,0.07));
+                background-color:#f5f1ec;
+                h3{
+                    font-size: 25px;
+                    color: #03363c;
+                    font-weight: normal;
+                }
+                #registrar{
+                    width: 214px;
+                    height: 50px;
+                    background-color: #eb6752;
+                    font-size: 21px;
+                    color: #ffffff;
+                    font-weight: bold;
+                }
+            }
+        }
+
+
+        main{
+            margin-top:100px;
+            section{
+                article {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 40px;
+                    justify-content: center;
+                    img {
+                        margin-right: 20px;
+                        
+                    }
+                    .artext{
+                        display:flex;
+                        flex-flow:column wrap;
+                        h3{
+                            align-content: initial;
+                            font-size: 40px;
+                            color: #03363c;
+                            font-weight: bold;
+                            margin-bottom: 30px;
+                        }
+                        p{
+                            max-width: 350px;
+                            font-size:18px;
+                            color:#03363c;
+                            font-weight: normal;
+                            text-align:justify;
+                        }
+                        
+                    }
+                  }
+                    #simg{
+                        order:2;
+                        margin-right: 0;
+                        margin-left:20px;
+                    }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        body{
+            header{
+                nav{
+                    padding:0;
+                    margin-bottom:5px;
+                    #logo{
+                        top:0;
+                        left:40%;
+                        width:55px;
+                        height:25px;
+                        span{
+                            font-size:16px;
+                        }
+                    }
+                    ul{
+                        justify-content:space-evenly;
+                        li{
+                            font-size:12px;
+                        }
+                    }
+                    #prueba{
+                        display:none;
+                    }
+                }
+            }
+            #hero{
+                width:100%;
+                #herotext{
+                    h1{
+                        font-size:20px;
+                    }
+                    h2{
+                        font-size:12px;
+                    }
+                }
+                #registro{
+                    height:54px;
+                    h3{
+                        font-size:16px;
+                    }
+                    #registrar{
+                        width:107px;
+                        height: 25px;
+                        font-size:12px;
+                    }
+                }
+            }
+            main{
+                margin-top:30px;
+                section{
+                    article{
+                        display: flex;
+                        flex-flow: column nowrap;
+                        align-items: center;
+                        padding-bottom: 40px;
+                        img{
+                            margin-right: 0;
+                            margin-bottom: 20px;
+                            width:100%;
+                        }
+                        .artext{
+                            h3{
+                                font-size:16px;
+                                margin-bottom:15px;
+                            }
+                            p{
+                                font-size:12px;
+                            }
+                        }
+                        #simg{
+                            order:unset;
+                            margin-left:0;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }

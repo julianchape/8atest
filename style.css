@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+body header nav {
+  padding: 16px 16px 16px 16px;
+  margin: 0 auto;
+  max-width: 1115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 108px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: white;
+}
+
+body header nav #logo {
+  background-color: #03353b;
+  width: 115px;
+  height: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header nav #logo span {
+  color: white;
+  font-size: 30px;
+}
+
+body header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: visible;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+body header nav ul li {
+  font-size: 15px;
+  color: #03363c;
+  font-weight: bold;
+  padding: 16px;
+}
+
+body header nav #prueba {
+  width: 214px;
+  height: 50px;
+  background-color: #3aaabb;
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+body #hero {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+body #hero img {
+  width: 100%;
+}
+
+body #hero #herotext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body #hero #herotext h1 {
+  font-size: 63px;
+  color: white;
+  font-weight: normal;
+  max-width: 525px;
+}
+
+body #hero #herotext h2 {
+  font-size: 23px;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}
+
+body #hero #registro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  height: 108px;
+  -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 1, 0.07));
+          filter: drop-shadow(0px 4px 2px rgba(0, 0, 1, 0.07));
+  background-color: #f5f1ec;
+}
+
+body #hero #registro h3 {
+  font-size: 25px;
+  color: #03363c;
+  font-weight: normal;
+}
+
+body #hero #registro #registrar {
+  width: 214px;
+  height: 50px;
+  background-color: #eb6752;
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+body main {
+  margin-top: 100px;
+}
+
+body main section article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main section article img {
+  margin-right: 20px;
+}
+
+body main section article .artext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+body main section article .artext h3 {
+  -ms-flex-line-pack: initial;
+      align-content: initial;
+  font-size: 40px;
+  color: #03363c;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+body main section article .artext p {
+  max-width: 350px;
+  font-size: 18px;
+  color: #03363c;
+  font-weight: normal;
+  text-align: justify;
+}
+
+body main section #simg {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  body header nav {
+    padding: 0;
+    margin-bottom: 5px;
+  }
+  body header nav #logo {
+    top: 0;
+    left: 40%;
+    width: 55px;
+    height: 25px;
+  }
+  body header nav #logo span {
+    font-size: 16px;
+  }
+  body header nav ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body header nav ul li {
+    font-size: 12px;
+  }
+  body header nav #prueba {
+    display: none;
+  }
+  body #hero {
+    width: 100%;
+  }
+  body #hero #herotext h1 {
+    font-size: 20px;
+  }
+  body #hero #herotext h2 {
+    font-size: 12px;
+  }
+  body #hero #registro {
+    height: 54px;
+  }
+  body #hero #registro h3 {
+    font-size: 16px;
+  }
+  body #hero #registro #registrar {
+    width: 107px;
+    height: 25px;
+    font-size: 12px;
+  }
+  body main {
+    margin-top: 30px;
+  }
+  body main section article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 40px;
+  }
+  body main section article img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  body main section article .artext h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  body main section article .artext p {
+    font-size: 12px;
+  }
+  body main section article #simg {
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
