@@ -47,7 +47,7 @@ body{
                     font-size:15px;
                     color:#03363c;
                     font-weight: bold;
-                    padding:16px;
+                    padding:22px;
                 }
             }
             #prueba{
@@ -56,15 +56,17 @@ body{
                 background-color:#3aaabb;
                 font-size: 21px;
                 color: #ffffff;
-                font-weight: bold;
+                font-weight: normal;
             }
         }
     }
 
         #hero{
             position:relative;
-            display:inline-block;
+            display:flex;
+            flex-flow: column wrap;
             text-align:center;
+
             img{
                 width:100%;
             }
@@ -78,6 +80,7 @@ body{
                     color:white;
                     font-weight: normal;
                     max-width:525px;
+                    margin-bottom:30px;
                 }
                 h2{
                     font-size:23px;
@@ -90,7 +93,7 @@ body{
                 display:flex;
                 flex-flow: row wrap;
                 justify-content: space-around;
-                align-content: center;
+                align-items: center;
                 width:100%;
                 height:108px;
                 filter:drop-shadow(0px 4px 2px rgba(0,0,1,0.07));
@@ -113,19 +116,19 @@ body{
 
 
         main{
-            margin-top:100px;
             section{
                 article {
                     display: flex;
                     align-items: center;
                     padding-bottom: 40px;
-                    justify-content: center;
+                    justify-content: space-around;
                     img {
                         margin-right: 20px;
                         
                     }
                     .artext{
                         display:flex;
+                        align-items: center;
                         flex-flow:column wrap;
                         h3{
                             align-content: initial;
@@ -153,7 +156,7 @@ body{
         }
     }
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1005px) {
         body{
             header{
                 nav{
@@ -184,6 +187,7 @@ body{
                 #herotext{
                     h1{
                         font-size:20px;
+                        margin-bottom:10px;
                     }
                     h2{
                         font-size:12px;

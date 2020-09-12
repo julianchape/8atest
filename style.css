@@ -81,7 +81,7 @@ body header nav ul li {
   font-size: 15px;
   color: #03363c;
   font-weight: bold;
-  padding: 16px;
+  padding: 22px;
 }
 
 body header nav #prueba {
@@ -90,12 +90,18 @@ body header nav #prueba {
   background-color: #3aaabb;
   font-size: 21px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 body #hero {
   position: relative;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   text-align: center;
 }
 
@@ -116,6 +122,7 @@ body #hero #herotext h1 {
   color: white;
   font-weight: normal;
   max-width: 525px;
+  margin-bottom: 30px;
 }
 
 body #hero #herotext h2 {
@@ -135,8 +142,9 @@ body #hero #registro {
           flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 108px;
   -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 1, 0.07));
@@ -159,10 +167,6 @@ body #hero #registro #registrar {
   font-weight: bold;
 }
 
-body main {
-  margin-top: 100px;
-}
-
 body main section article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,9 +175,8 @@ body main section article {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 body main section article img {
@@ -184,6 +187,9 @@ body main section article .artext {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
@@ -215,7 +221,7 @@ body main section #simg {
   margin-left: 20px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1005px) {
   body header nav {
     padding: 0;
     margin-bottom: 5px;
@@ -245,6 +251,7 @@ body main section #simg {
   }
   body #hero #herotext h1 {
     font-size: 20px;
+    margin-bottom: 10px;
   }
   body #hero #herotext h2 {
     font-size: 12px;
