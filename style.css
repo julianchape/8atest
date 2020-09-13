@@ -254,7 +254,7 @@ body main section:not(#hero) #simg {
             justify-content: center;
   }
   body header nav #logo {
-    margin-left: 8px;
+    margin-left: 0px;
     width: 55px;
     height: 25px;
   }
@@ -274,7 +274,7 @@ body main section:not(#hero) #simg {
     width: 75px;
     height: 30px;
     font-size: 12px;
-    margin-right: 8px;
+    margin-right: 0px;
   }
   body main {
     margin-top: 30px;
@@ -297,13 +297,13 @@ body main section:not(#hero) #simg {
   }
   body main #hero #registro h3 {
     font-size: 14px;
-    margin-left: 8px;
+    margin-left: 16px;
   }
   body main #hero #registro #registrar {
     width: 107px;
     height: 25px;
     font-size: 10px;
-    margin-right: 8px;
+    margin-right: 16px;
   }
   body main section:not(#hero) article {
     display: -webkit-box;
@@ -319,31 +319,33 @@ body main section:not(#hero) #simg {
     padding-bottom: 40px;
   }
   body main section:not(#hero) article img {
-    margin-right: 8px;
-    margin-left: 8px;
+    margin-right: 16px;
+    margin-left: 16px;
     margin-bottom: 20px;
     width: 70%;
   }
   body main section:not(#hero) article .artext {
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
   body main section:not(#hero) article .artext h3 {
     font-size: 16px;
     margin-bottom: 15px;
+    text-align: center;
   }
   body main section:not(#hero) article .artext p {
     font-size: 12px;
   }
   body main section:not(#hero) article #stext {
-    margin-right: 8px;
-    margin-left: 8px;
+    margin-right: 16px;
+    margin-left: 16px;
   }
   body main section:not(#hero) article #simg {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
-    margin-right: 8px;
+    margin-right: 16px;
+    margin-left: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
