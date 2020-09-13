@@ -15,7 +15,7 @@ body {
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  grid-auto-rows: minmax(45px, auto);
+  grid-auto-rows: minmax(0px, auto);
       grid-template-areas: "navbar" "hero" "main";
 }
 
@@ -39,6 +39,10 @@ body header nav {
           align-items: center;
   width: 100%;
   background-color: white;
+}
+
+body header nav input {
+  display: none;
 }
 
 body header nav #logo {
@@ -249,35 +253,112 @@ body main section:not(#hero) #simg {
 
 @media screen and (max-width: 1005px) {
   body header nav {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    height: 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body header nav .hamburguesa {
+    margin-right: 16px;
+    z-index: 999;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  body header nav .hamburguesa span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    margin-bottom: 2px;
+    position: relative;
+    background: #000;
+    z-index: 1;
+    -webkit-transform-origin: 4px 0px;
+            transform-origin: 4px 0px;
+    -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  body header nav .hamburguesa span:first-child {
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  body header nav .hamburguesa span:nth-last-child(2) {
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+  body header nav .hamburguesa input:checked ~ span {
+    opacity: 1;
+    -webkit-transform: rotate(45deg) translate(-2px, -1px);
+            transform: rotate(45deg) translate(-2px, -1px);
+  }
+  body header nav .hamburguesa input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+            transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  body header nav .hamburguesa input:checked ~ span:nth-last-child(2) {
+    -webkit-transform: rotate(-45deg) translate(0px, -1px);
+            transform: rotate(-45deg) translate(0px, -1px);
+  }
+  body header nav .hamburguesa ul {
+    background-color: #03353b;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    overflow: hidden;
+    list-style: none;
+    height: 0px;
+  }
+  body header nav .hamburguesa ul li {
+    position: relative;
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+  }
+  body header nav .hamburguesa ul li:first-child {
+    margin-top: 16px;
+  }
+  body header nav .hamburguesa ul li:last-child {
+    margin-bottom: 16px;
+  }
+  body header nav .hamburguesa input[type="checkbox"]:checked ~ ul {
+    height: 300px;
+  }
+  body header nav .hamburguesa input {
+    display: block;
+    width: 32px;
+    height: 32px;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
   }
   body header nav #logo {
-    margin-left: 0px;
+    margin-left: 16px;
     width: 55px;
     height: 25px;
   }
   body header nav #logo span {
     font-size: 16px;
   }
-  body header nav ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  body header nav ul li {
-    padding: 8px;
-    font-size: 12px;
-  }
   body header nav #prueba {
     width: 75px;
     height: 30px;
     font-size: 12px;
-    margin-right: 0px;
-  }
-  body main {
-    margin-top: 30px;
+    margin-right: 16px;
   }
   body main #hero {
     width: 100%;

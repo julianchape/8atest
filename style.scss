@@ -14,13 +14,16 @@ body{
     font-family: 'Roboto', sans-serif;
     display:grid;
     grid-template-columns: 100%;
-    grid-auto-rows: minmax(45px,auto);
+    grid-auto-rows: minmax(0px,auto);
     grid-template-areas:
     "navbar"
     "hero"
     "main";
     header{
         nav{
+            input{
+                display:none;
+            }
         grid-area:navbar;
         display:flex;
         flex-flow:row wrap;
@@ -177,33 +180,99 @@ body{
         body{
             header{
                 nav{
-                    justify-content: center;
+                    height:50px;
+                    flex-flow:row wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    .hamburguesa{
+                        margin-right:16px;
+                        z-index:999;
+                        order:2;
+                        span{
+                            display: block;
+                            width: 18px;
+                            height: 2px;
+                            margin-bottom: 2px;
+                            position: relative;
+                            background: #000;
+                            z-index: 1;
+                            transform-origin: 4px 0px;
+                            transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), 
+                            background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                            opacity 0.55s ease;
+                                &:first-child{
+                                    transform-origin: 0% 0%;
+                                }
+                                &:nth-last-child(2){
+                                    transform-origin: 0% 100%;
+                                }
+                            }
+                            input:checked ~ span{
+                                opacity: 1;
+                                transform: rotate(45deg) translate(-2px, -1px);
+                            }
+                            input:checked ~ span:nth-last-child(3){
+                                opacity:0;
+                                transform:rotate(0deg) scale(0.2,0.2);
+                            }
+                            input:checked ~ span:nth-last-child(2){
+                                transform:rotate(-45deg) translate(0px,-1px);
+                            }
+                            ul{
+                                background-color:#03353b;
+                                flex-flow:column nowrap;
+                                width: 100%;
+                                position: absolute;
+                                top: 50px;
+                                right: 0;
+                                overflow: hidden;
+                                list-style: none;
+                                height: 0px;
+
+                                li{
+                                    position:relative;
+                                    color:white;
+                                    padding:8px;
+                                    font-size:12px;
+                                    &:first-child{
+                                        margin-top:16px;
+                                    }
+                                    &:last-child{
+                                        margin-bottom:16px;
+                                    }
+                                }
+                            }
+                            input[type="checkbox"]:checked ~ ul{
+                                height: 300px;
+                            }
+                            input{
+                                display: block;
+                                width: 32px;
+                                height: 32px;
+                                opacity: 0;
+                                z-index: 2;
+                                position: absolute;
+                            }
+                    }
+                    
                     #logo{
-                        margin-left:0px;
+                        margin-left:16px;
                         width:55px;
                         height:25px;
                         span{
                             font-size:16px;
                         }
                     }
-                    ul{
-                        justify-content: center;
-                        li{
-                            padding:8px;
-                            font-size:12px;
-                        }
-                    }
                     #prueba{
                         width:75px;
                         height:30px;
                         font-size:12px;
-                        margin-right:0px;
+                        margin-right:16px;
                     }
                 }
             }
  
             main{
-                margin-top:30px;
                 #hero{
                     width:100%;
                     #herotext{
