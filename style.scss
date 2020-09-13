@@ -5,17 +5,23 @@
     border:0;
     padding:0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 
 body{
     font-family: 'Roboto', sans-serif;
-    display:flex;
-    flex-flow:column nowrap;
-    justify-content: center;
-    align-items: center;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(45px,auto);
+    grid-template-areas:
+    "navbar"
+    "hero"
+    "main";
     header{
         nav{
-        max-width: 1115px;
+        grid-area:navbar;
         display:flex;
         flex-flow:row wrap;
         justify-content: space-between;
@@ -24,6 +30,7 @@ body{
         width:100%;
         background-color:white;
         #logo{
+            margin-left:32px;
             background-color:#03353b;
             width:115px;
             height:49px;
@@ -51,6 +58,7 @@ body{
                 }
             }
             #prueba{
+                margin-right:32px;
                 width:214px;
                 height:50px;
                 background-color:#3aaabb;
@@ -62,10 +70,10 @@ body{
     }
 
         #hero{
-            max-width: 1115px;
+            grid-area:hero;
             position:relative;
             display:flex;
-            flex-flow: column wrap;
+            flex-flow: column nowrap;
             text-align:center;
 
             img{
@@ -101,11 +109,13 @@ body{
                 background-color:#f5f1ec;
                 margin-bottom:30px;
                 h3{
+                    margin-left:32px;
                     font-size: 25px;
                     color: #03363c;
                     font-weight: normal;
                 }
                 #registrar{
+                    margin-right:32px;
                     width: 214px;
                     height: 50px;
                     background-color: #eb6752;
@@ -118,14 +128,19 @@ body{
 
 
         main{
-            max-width: 1115px;
-            section{
+            section:not(#hero){
+                grid-area:main;
                 article {
                     display: flex;
                     align-items: center;
                     margin-bottom: 50px;
                     justify-content: space-between;
+                    
+                    img{
+                        margin-left:32px;
+                    }
                     .artext{
+                        margin-right:32px;
                         display:flex;
                         align-items: center;
                         justify-content: center;
@@ -145,11 +160,14 @@ body{
                         }
                         
                     }
+                    #stext{
+                        margin-right:0px;
+                        margin-left:32px;
+                    }
                   }
                     #simg{
                         order:2;
-                        margin-right: 0;
-                        margin-left:20px;
+                        margin-right:32px;
                     }
             }
         }
@@ -157,14 +175,11 @@ body{
 
     @media screen and (max-width: 1005px) {
         body{
-            padding:16px;
             header{
                 nav{
-                    padding:0;
-                    margin-bottom:5px;
+                    justify-content: center;
                     #logo{
-                        top:0;
-                        left:40%;
+                        margin-left:8px;
                         width:55px;
                         height:25px;
                         span{
@@ -172,7 +187,9 @@ body{
                         }
                     }
                     ul{
+                        justify-content: center;
                         li{
+                            padding:8px;
                             font-size:12px;
                         }
                     }
@@ -180,6 +197,7 @@ body{
                         width:75px;
                         height:30px;
                         font-size:12px;
+                        margin-right: 8px;
                     }
                 }
             }
@@ -189,6 +207,7 @@ body{
                 #hero{
                     width:100%;
                     #herotext{
+                        top:33%;
                         h1{
                             font-size:20px;
                             margin-bottom:10px;
@@ -199,43 +218,54 @@ body{
                     }
                     #registro{
                         height:54px;
+                        
                         h3{
-                            font-size:16px;
+                            font-size:14px;
+                            margin-left:8px;
                         }
                         #registrar{
                             width:107px;
                             height: 25px;
-                            font-size:12px;
+                            font-size:10px;
+                            margin-right: 8px;
                         }
                     }
                 }
-                section{
+                section:not(#hero){
                     article{
                         display: flex;
-                        flex-flow: column nowrap;
+                        flex-flow: column wrap;
                         align-items: center;
                         padding-bottom: 40px;
                         img{
-                            margin-right: 0;
+                            margin-right: 8px;
+                            margin-left:8px;
                             margin-bottom: 20px;
-                            width:100%;
+                            width:70%;
                         }
                         .artext{
+                            margin-left:8px;
+                            margin-right:8px;
                             h3{
-                                font-size:20px;
+                                font-size:16px;
                                 margin-bottom:15px;
                             }
                             p{
-                                font-size:16px;
-                            }
+                                font-size:12px;
+                            }   
+                        }
+                        #stext{
+                            margin-right:8px;
+                            margin-left:8px;
                         }
                         #simg{
-                            order:unset;
-                            margin-left:0;
+                            order:0;
+                            margin-right:8px;
                         }
                     }
                     
                 }
             }
         }
+        
     }
