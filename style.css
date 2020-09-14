@@ -118,9 +118,6 @@ body #hero {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   text-align: center;
-  -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 1, 0.07));
-          filter: drop-shadow(0px 4px 2px rgba(0, 0, 1, 0.07));
-  background-color: #f5f1ec;
 }
 
 body #hero img {
@@ -168,6 +165,10 @@ body #hero #registro {
           align-items: center;
   width: 100%;
   height: 108px;
+  -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 1, 0.07));
+          filter: drop-shadow(0px 4px 2px rgba(0, 0, 1, 0.07));
+  background-color: #f5f1ec;
+  margin-bottom: 30px;
 }
 
 body #hero #registro h3 {
@@ -203,7 +204,7 @@ body main section:not(#hero) article {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 110px auto;
+  margin: 0 auto;
   max-width: 1110px;
   margin-bottom: 60px;
 }
@@ -217,6 +218,9 @@ body main section:not(#hero) article .artext {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
