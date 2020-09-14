@@ -255,6 +255,7 @@ body main section:not(#hero) #simg {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+  padding-left: 0;
   padding-right: 32px;
 }
 
@@ -406,7 +407,7 @@ body main section:not(#hero) #simg {
         -ms-flex-align: center;
             align-items: center;
     padding-bottom: 30px;
-    margin: 0 auto;
+    margin: 30px auto;
   }
   body main section:not(#hero) article img {
     padding: 0;
@@ -424,6 +425,7 @@ body main section:not(#hero) #simg {
   }
   body main section:not(#hero) article .artext p {
     font-size: 12px;
+    line-height: normal;
   }
   body main section:not(#hero) article #stext {
     margin-right: 16px;
