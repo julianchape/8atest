@@ -258,7 +258,7 @@ body main section:not(#hero) #simg {
   padding-left: 0;
 }
 
-@media screen and (min-width: 801px) and (max-width: 1300px) {
+@media screen and (min-width: 901px) and (max-width: 1300px) {
   body header nav #logo {
     margin-left: 32px;
     width: 100px;
@@ -305,7 +305,7 @@ body main section:not(#hero) #simg {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   body header nav {
     height: 50px;
     -webkit-box-orient: horizontal;
