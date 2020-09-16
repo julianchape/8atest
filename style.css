@@ -480,11 +480,13 @@ body main section:not(#hero) #simg {
   body main section:not(#hero) article .artext p {
     font-size: 12px;
     line-height: normal;
+    text-align: center;
   }
   body main section:not(#hero) article #stext {
     padding: 0;
     margin-right: 16px;
     margin-left: 16px;
+    text-align: center;
   }
   body main section:not(#hero) article #simg {
     -webkit-box-ordinal-group: 1;
