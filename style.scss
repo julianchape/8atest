@@ -226,6 +226,7 @@ body{
                     }
                     p{
                         font-size:12px !important;
+                        line-height: 30px !important;
                     }
                 }
                 #simg{
@@ -233,8 +234,10 @@ body{
                     margin-right:32px;
                 }
                 #stext{
+                    padding:0px !important;
                     padding-right:32px !important;
                     margin-left:32px;
+                    line-height: 30px !important;
                 }
             }
         }
