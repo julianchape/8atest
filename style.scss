@@ -35,7 +35,6 @@ body{
         width:100%;
         background-color:white;
         #logo{
-            margin-left:32px;
             background-color:#03353b;
             width:115px;
             height:49px;
@@ -63,13 +62,15 @@ body{
                 }
             }
             #prueba{
-                margin-right:32px;
                 width:214px;
                 height:50px;
                 background-color:#3aaabb;
                 font-size: 21px;
                 color: #ffffff;
                 font-weight: normal;
+            }
+            #prueba:hover{
+                    background:linear-gradient(225deg, #03353b 0%, #3aaabb 100%);
             }
         }
     }
@@ -116,19 +117,20 @@ body{
                 width:100%;
                 height:108px;
                 h3{
-                    margin-left:32px;
                     font-size: 25px;
                     color: #03363c;
                     font-weight: normal;
                 }
                 #registrar{
-                    margin-right:32px;
                     width: 214px;
                     height: 50px;
                     background-color: #eb6752;
                     font-size: 21px;
                     color: #ffffff;
                     font-weight: bold;
+                }
+                #registrar:hover{
+                    background:linear-gradient(225deg, #eb6752 0%, #03353b 100%);
                 }
             }
         }
@@ -144,13 +146,8 @@ body{
                     margin:100px auto;
                     max-width: 1110px;
                     margin-bottom:60px;
-                    
-                    img{
-                        padding-left:32px;
-                    }
                     .artext{
-                        padding-left:32px;
-                        padding-right:32px;
+                        padding-left:125px;
                         display:flex;
                         align-items: space-between;
                         justify-content: center;
@@ -172,19 +169,78 @@ body{
                     }
                     #stext{
                         margin-right:0px;
-                        padding-left:32px;
+                        padding-left:0px;
+                        padding-right:120px;
                     }
                   }
                     #simg{
                         order:2;
                         padding-left:0;
-                        padding-right:32px;
                     }
             }
         }
     }
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width:1300px){
+        body{
+            header{
+                nav{
+                    #logo{
+                        margin-left:32px;
+                        width:100px;
+                        span{
+                            font-size:24px;
+                        }
+                        }
+                        ul{
+                            li{
+                                padding:8px;
+                            }
+                        }
+                    #prueba{
+                        margin-right:32px;
+                        width:80px;
+                        font-size:16px;
+                    }
+                }
+            }
+            #registro{
+                h3{
+                    margin-left:32px;
+                    font-size:21px !important;
+                }
+                #registrar{
+                    margin-right:32px;
+                    font-size:18px !important;
+                }
+            }
+            article{
+                img{
+                    margin-left:32px;
+                }
+                .artext{
+                    padding-left:32px !important;
+                    margin-right:32px;
+                    h3{
+                        font-size:20px !important;
+                    }
+                    p{
+                        font-size:12px !important;
+                    }
+                }
+                #simg{
+                    margin-left:0px;
+                    margin-right:32px;
+                }
+                #stext{
+                    padding-right:32px !important;
+                    margin-left:32px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px) {
         body{
             header{
                 nav{
@@ -193,9 +249,9 @@ body{
                     align-items: center;
                     justify-content: space-between;
                     .hamburguesa{
-                        margin-right:16px;
+                        margin-left:16px;
                         z-index:999;
-                        order:2;
+                        order:0;
                         span{
                             display: block;
                             width: 18px;
@@ -267,6 +323,7 @@ body{
                         margin-left:16px;
                         width:55px;
                         height:25px;
+                        order:1;
                         span{
                             font-size:16px;
                         }
@@ -276,6 +333,7 @@ body{
                         height:30px;
                         font-size:12px;
                         margin-right:16px;
+                        order:2;
                     }
                 }
             }
@@ -298,13 +356,13 @@ body{
                         height:54px;
                         
                         h3{
-                            font-size:14px;
+                            font-size:14px !important;
                             margin-left:16px;
                         }
                         #registrar{
                             width:107px;
                             height: 25px;
-                            font-size:10px;
+                            font-size:10px !important;
                             margin-right: 16px;
                         }
                     }
@@ -319,11 +377,13 @@ body{
                         img{
                             padding:0;
                             margin-bottom: 20px;
-                            width:70%;
+                            width:100%;
+                            margin-left:0px;
                         }
                         .artext{
                             margin-left:16px;
                             margin-right:16px;
+                            padding:0;
                             h3{
                                 font-size:16px;
                                 margin-bottom:15px;
@@ -335,14 +395,13 @@ body{
                             }   
                         }
                         #stext{
+                            padding:0;
                             margin-right:16px;
-                            margin-left:16px;
                         }
                         #simg{
                             order:0;
                             padding:0;
                             margin-right:16px;
-                            margin-left:16px;
                         }
                     }
                     
