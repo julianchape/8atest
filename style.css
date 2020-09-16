@@ -258,7 +258,7 @@ body main section:not(#hero) #simg {
   padding-left: 0;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 801px) and (max-width: 1300px) {
   body header nav #logo {
     margin-left: 32px;
     width: 100px;
@@ -484,13 +484,13 @@ body main section:not(#hero) #simg {
   body main section:not(#hero) article #stext {
     padding: 0;
     margin-right: 16px;
+    margin-left: 16px;
   }
   body main section:not(#hero) article #simg {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
     padding: 0;
-    margin-right: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
